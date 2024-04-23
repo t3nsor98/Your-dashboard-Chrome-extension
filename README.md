@@ -1,6 +1,6 @@
 # Your Dashboard Chrome Extension
 
-![This is the first screenshot](Screenshot_2023-11-19_223448.png)
+![This is the first screenshot](Screenshot 2023-11-19 223448.png)
 
 ![This is the second screenshot](Screenshot_2023-11-19_223530.png)
 
