@@ -1,8 +1,8 @@
 # Your Dashboard Chrome Extension
 
-![This is the first screenshot](Screenshot 2023-11-19 223448.png)
+![This is the first screenshot](first.png)
 
-![This is the second screenshot](Screenshot_2023-11-19_223530.png)
+![This is the second screenshot](second.png)
 
 Welcome to the "Your Dashboard" Chrome extension repository! This Chrome extension is designed to provide you with a customizable dashboard right in your browser's new tab. You can add your favorite websites, view the current weather, and even set a daily quote to inspire you.
 
