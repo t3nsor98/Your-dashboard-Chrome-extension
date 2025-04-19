@@ -1,124 +1,295 @@
 * {
-    box-sizing: border-box;
-    user-select: none;
+  box-sizing: border-box;
+  user-select: none;
 }
 
 body {
-    margin: 0;
-    background: no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0px 0px 20px #242424;
+  margin: 0;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 0px 20px #242424;
 }
 
 main {
-    padding: 15px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 div.top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1.time {
-    text-align: center;
-    font-size: 5rem;    
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 0px 0px 20px #242424;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 div#crypto {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
-div#crypto>p {
-    margin: 0;
+div#crypto > p {
+  margin: 0;
 }
 
 div#crypto-top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
-div#crypto-top>span {
-    margin-left: 10px;
+div#crypto-top > span {
+  margin-left: 10px;
 }
 
 div#weather {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-self: flex-start;
-    margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(168, 168, 168, 0.904);
+  border-radius: 10px;
+  color: black;
 }
 
-div#weather>img {
-    width: 70px;
-}
-
-p.weather-city {
-    width: 100%;
-    text-align: right;
-    margin: 0;
-    margin-top: -10px;
-}
-
-p.weather-temp {
-    margin: 0;
-    font-size: 1.7rem;
-    margin-left: -10px;
+div#weather > img {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
 }
 
 #greet {
-    font-size: 1.5rem;
-    text-align: center;
-    cursor: pointer;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
 }
 
 #quote {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* Style for the input container */
 .input-container {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    margin: 20px auto;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 20px auto;
 }
 
 /* Style for the input box */
 .search-input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
 /* Style for the search button */
 .search-button {
-    background-color: #4285f4;
-    /* Google Blue */
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #4285f4;
+  /* Google Blue */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 /* Add hover effect to the search button */
 .search-button:hover {
-    background-color: #1c3aa9;
-    /* Darker shade of Google Blue */
+  background-color: #1c3aa9;
+  /* Darker shade of Google Blue */
+}
+
+/* Pomodoro Timer Styles */
+.pomodoro-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 350px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.timer-display {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.pomodoro-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.pomodoro-button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.pomodoro-button:hover {
+  background-color: #1c3aa9;
+}
+
+.pomodoro-modes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.mode-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.mode-button.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: white;
+}
+
+.mode-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Todo List Styles */
+.todo-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 350px;
+  backdrop-filter: blur(5px);
+}
+
+.todo-container h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.todo-input-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+}
+
+#addTodoBtn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#todoList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#todoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#todoList li.completed .todo-text {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.todo-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Enhanced Weather Styles */
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.weather-desc {
+  margin: -5px 0 0 0;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  margin: 5px 0 0 0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pomodoro-container,
+  .todo-container {
+    width: 90%;
+  }
+
+  .input-container {
+    width: 90%;
+  }
+
+  h1.time {
+    font-size: 2.5rem;
+  }
 }
